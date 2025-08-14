@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveStay - Ana Sayfa</title>
+    <link rel="icon" href="img/LiveStay (1).png" type="image/png" />
+    <style>
+        /* Arka plan animasyonu */
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(-45deg, #1e3c72, #2a5298, #f12711, #f5af19);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: white;
+        }
+
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .content-box h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .content-box p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background: #ffd700;
+            color: black;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LiveStay</div>
+        <nav>
+            <a href="anasayfa.html">Ana Sayfa</a>
+            <a href="hakkında.html" target="_blank">Hakkında</a>
+            <a href="iletişim.html" target="_blank">İletişim</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-box">
+            <h1>LiveStay Oyununa Hoşgeldiniz</h1>
+            <p>Berat Beri yapımı olan LiveStay oyununda birbirinden farklı 10 ailenin ev seçimlerinde bi emlakçı gibi yardımcı olacaksınız.Doğru kararlarınızda
+iyi sonuçlar,kötü seçimlerde ise kötü sonuçlar alacaksınız.Yaz bölümü ve kış bölümü olmak üzere 2 bölümden oluşan bu oyunumuzda yaz bölümünde 5,kış bölümünde 5 soru ile karşı karşıya kalacaksınız.
+Şimdi hangi bölümden başlamak istiyorsanız onu seçip oyuna başlayınız.
+            </p>
+            <a href="yaz.html">
+            <button class="btn">Yaz Bölümü</button>
+            </a>
+            <a href="kıs.html">
+            <button class="btn">Kış Bölümü</button>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 LiveStay-Berat Beri.
+    </footer>
+</body>
+</html>
+

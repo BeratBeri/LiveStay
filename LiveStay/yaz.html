@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LiveStay - Yaz Sezonu</title>
+<link rel="icon" href="img/LiveStay (1).png" type="image/png" />
+<style>
+  body {
+    margin:0; padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #f12711, #f5af19);
+    background-size: 400% 400%;
+    animation: bgAnim 20s ease infinite;
+    color: #fafafa;
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh;
+  }
+  @keyframes bgAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(14px);
+    border-radius: 22px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    text-align: center;
+  }
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  p.lead {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 40px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 28px;
+  }
+  .card {
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+  }
+  .card:hover {
+    background: rgba(255,255,255,0.25);
+  }
+  .card h3 {
+    color: #ffd700;
+    margin-bottom: 15px;
+  }
+  .card p {
+    margin: 0;
+  }
+   .btn-professional {
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(45deg, #ffb347, #ffcc33);
+    color: #222;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(255, 179, 71, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    user-select: none;
+  }
+
+  .btn-professional:hover {
+    background: linear-gradient(45deg, #ffcc33, #ffb347);
+    box-shadow: 0 8px 20px rgba(255, 204, 51, 0.8);
+    transform: translateY(-3px);
+  }
+
+  .btn-professional:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(255, 179, 71, 0.5);
+  }
+
+  .btn-professional:focus {
+    outline: 3px solid #ffd700;
+    outline-offset: 4px;
+  }
+</style>
+</head>
+<body>
+
+<section>
+  <h2>Yaz Sezonu Başladı!</h2>
+  <p class="lead">Türkiye'nin farklı şehirlerinden beş köklü aile <strong>Demir, Altınkaya, Kılıç, Yılmaz ve Barukan</strong>  ailelerinin hayatlarını şekillendirecek önemli bir kararla karşı karşıyalar.
+Her biri kendi hikayesi, ihtiyaçları ve hayalleriyle farklı ev seçenekleri arasından en uygun olanı seçmek zorunda.
+Sen de bu ailelerin yanında ol, onların doğru kararı vermesine yardım et!</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🌴 Tatil & Dinlenme</h3>
+      <p>Vücudunu yenilemek için yeterli dinlenme ve tatil zamanlarını programına dahil et, enerji depola.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏨 Otel Seçimi</h3>
+      <p>Konforlu ve bütçene uygun otel seçenekleriyle tatilini unutulmaz kıl.</p>
+    </div>
+  </div>
+  <h2>Sorular (❓​)</h2>
+  <p>Demir Ailesi, İstanbul’un Anadolu Yakası’nda yaşayan 4 kişilik sıcak bir ailedir.
+Ahmet ve eşi Elif, iki çocuklarıyla (8 yaşında Ali ve 5 yaşında Deniz) şehir hayatının koşuşturmacasında dengeli ve huzurlu bir yaşam arayışındadır.
+Ahmet, şehrin merkezi bir semtinde banka çalışanı olarak yoğun tempoda çalışırken, Elif evden yarı zamanlı olarak grafik tasarım işleri yapmaktadır.
+ Çocukların okulu ve kreşi evlerine yakın, ancak her ikisi de biraz daha ferah ve yeşillikli bir ortamda büyümelerini istiyorlar.
+Aile, özellikle çocukların güvenle oynayabileceği geniş bir bahçe ve sosyal alanlar arıyor. Ayrıca Elif, evden çalışırken daha sessiz,
+ rahat bir alan istiyor. Haftasonları için de doğaya kolayca ulaşabilecekleri, şehir gürültüsünden biraz uzak ama çok uzak olmayan bir yer tercih ediyorlar.
+Bütçeleri orta seviyede; evin fiyatı, ulaşım kolaylığı ve çevredeki sosyal imkanlar karar verirken önemli kriterler arasında. Aile, evin büyüklüğü
+ ve konforu kadar, çocuklar için güvenli ve sağlıklı bir çevre olmasına da çok önem veriyor.</p>
+ <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Ev Seçeneği 1</h4>
+    <p>Kadıköy, İstanbul’da bulunan 95 metrekare büyüklüğünde, 3+1 modern bir daire. Bu daire yeni yapılmış, güvenlikli bir site içinde yer alıyor.
+       Site içinde çocuk oyun alanları mevcut ancak bahçe yok. Metro ve otobüs durağına sadece 5 dakika yürüme mesafesinde, dolayısıyla ulaşım oldukça kolay. Fiyatı 1.200.000 TL. Avantajları arasında okullara ve iş yerine yakın olması ile şehir hayatının
+       tüm imkanlarına kolay erişim bulunuyor. Dezavantaj olarak ise bahçe olmaması ve şehir gürültüsünün fazla olması sayılabilir.</p>
+    <button class="btn-professional" onclick="Berat()">Seç</button>
+  </div>
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Ev Seçeneği 2</h4>
+    <p>Şile’de, İstanbul’a yaklaşık 45 dakika mesafede yer alan 140 metrekare büyüklüğünde, 4+2 müstakil bir villa. Geniş bir bahçesi ve çocuklar 
+      için oyun alanı ile küçük bir hobi bahçesi bulunuyor. Doğayla iç içe, sakin bir mahallede yer alıyor. Ancak işe ve okula ulaşım zor; günlük
+       araç kullanımı gerektiriyor. Fiyatı 1.100.000 TL. Bu evin avantajları arasında huzurlu ve geniş yaşam alanı olması, çocuklar için güvenli bir
+        çevre sağlaması bulunurken, dezavantajları ulaşım zorluğu ve sosyal imkanların azlığıdır.
+
+</p>
+
+    <button class="btn-professional" onclick="Berna()">Seç</button>
+  </div>
+   <p id="enes">Yaptığınız ev seçimi Demir ailesi için...</p>
+   <br>
+   <p>Altınkaya ailesi kalabalık ve neşeli bir ailedir. Ailede anne, baba, iki çocuk ve büyükanneleri vardır. Hafta sonları bir araya gelip bahçede mangal
+     yapmayı, misafir ağırlamayı ve hep birlikte film izlemeyi çok severler. Onlar için evin geniş olması, çocukların oyun oynayabileceği alanların
+      bulunması ve misafirlerin rahatça konaklayabileceği odaların olması çok önemlidir.
+Altınkaya ailesi için iki farklı ev seçeneği vardır. İlk seçenek, şehir merkezine yakın, üç katlı geniş bir villadır. Bu evin bahçesinde yüzme havuzu,
+ çocuk oyun alanı ve barbekü köşesi bulunur. Misafirler için ayrı bir oturma odası vardır ve ev modern güvenlik sistemleriyle donatılmıştır.
+İkinci seçenek ise doğa ile iç içe, iki katlı ahşap bir dağ evidir. Orman manzarasına sahip olan bu evde geniş bir veranda ve şömineli bir salon yer alır.
+ Huzurlu ve sakin bir yaşam isteyenler için idealdir.
+</p>
+ <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Ev Seçeneği 1</h4>
+    <p>Altınkaya ailesi, şehir merkezine yakın, üç katlı geniş bir villada yaşayabilir. Bu evde 6 oda, 2 banyo, büyük bir mutfak ve salon bulunur.
+       Bahçesinde yüzme havuzu, çocuk oyun alanı ve barbekü köşesi vardır. Ev modern tasarıma sahip olup güvenlik sistemleriyle donatılmıştır.</p>
+    <button class="btn-professional" onclick="buma()">Seç</button>
+  </div>
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Ev Seçeneği 2</h4>
+    <p>
+Altınkaya ailesi, doğa ile iç içe, iki katlı ahşap bir dağ evinde yaşayabilir. Bu evde 4 oda, 1 banyo, geniş bir veranda ve şömineli bir salon bulunur.
+ Ev orman manzarasına sahiptir ve çevresinde yürüyüş parkurları yer alır. Sessiz ve huzurlu bir ortamda yaşamayı sevenler için idealdir.
+</p>
+
+    <button class="btn-professional" onclick="abc()">Seç</button>
+</div>
+<p id="ronaldo">Yaptığınız ev seçimi Altınkaya ailesi için...</p>
+<br>
+<p>Kılıç Ailesi, İstanbul’un karmaşık şehir yaşamında dengeli bir hayat sürmeye çalışan 5 kişilik bir ailedir.
+Baba Serhat Kılıç, uluslararası bir şirkette proje yöneticisi olarak sık sık yurt dışına çıkmaktadır. Anne Derya Kılıç, üniversitede öğretim görevlisi olup akademik araştırmalarıyla yoğun bir tempoya sahiptir. Çocuklar ise farklı yaş gruplarında olup değişik ilgi alanlarına sahiptir:
+ Elif (15) tiyatro ve resimle ilgilenir, Can (10) futbola ve bilim projelerine meraklıdır, Minik Ada (4) ise güvenli bir oyun alanına ihtiyaç duyar.
+Aile için evin güvenliği, sessiz ve konforlu bir ortam, çocukların farklı aktiviteler için alan bulabilmesi ve sosyal imkanlara erişim çok önemlidir.
+ Ayrıca evin yatırım değeri ve genişliği de karar verirken göz önünde bulundurulmaktadır.</p>
+ <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Ev Seçeneği 1</h4>
+    <p>220 m² büyüklüğünde, 5+2 dairedir. 3 ayrı çocuk odası, bir çalışma odası ve ana yatak odası içerir. Merkezi klima ve akıllı 
+      ev sistemine sahiptir. Site içinde kapalı spor salonu, yüzme havuzu ve güvenlikli otopark bulunur. Şehir merkezine 10 dakika,
+       okul ve alışveriş merkezine yakın konumdadır. Bahçe yoktur, ancak balkon ve teras mevcuttur. Avantajları arasında ulaşım ve 
+       sosyal imkanların mükemmel olması, güvenliğin üst düzey olması ve çocuk aktivitelerine yakınlık bulunurken, dezavantajı açık bahçe
+        eksikliği ve doğayla bağlantının sınırlı olmasıdır.</p>
+    <button class="btn-professional" onclick="def()">Seç</button>
+  </div>
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Ev Seçeneği 2</h4>
+    <p>
+300 m² büyüklüğünde, 6+3 villa tarzındadır. Bahçeli olup açık yüzme havuzu ve tenis kortu içerir. Geniş salon, kütüphane, oyun odası ve
+ home-office alanları mevcuttur. Doğa manzaralı ve sessiz, özel bir mahallede yer alır. Şehir merkezine 45 dakika uzaklıktadır;
+  okul ve alışveriş merkezine erişim sınırlıdır. Avantajları huzurlu,
+ özel yaşam alanı ve çocuklar için çok fazla alan sunmasıdır. Dezavantajları ise ulaşım zorluğu ve sosyal imkanların sınırlı olmasıdır.
+</p>
+    <button class="btn-professional" onclick="ghj()">Seç</button>
+  </div>
+<p id="messi">Yaptığınız ev seçimi Kılıç ailesi için...</p>
+<br>
+<p>Yılmaz ailesi, dört kişiden oluşan, şehir merkezine yakın bir semtte yaşayan, çalışkan ve sosyal bir ailedir. Baba Murat Yılmaz bir lise müdürüdür, 
+  anne Ayşe Yılmaz ise bir devlet hastanesinde hemşire olarak çalışmaktadır. Çocuklar, 14 yaşındaki Elif ve 10 yaşındaki Kerem, okulda oldukça 
+  başarılıdır. Aile, uzun zamandır yaşadıkları apartman dairesinden daha geniş, bahçeli bir eve taşınmayı istemektedir. Ancak taşınacakları evin
+  hem iş yerlerine ulaşım açısından kolay olması hem de çocukların okuluna yakın olması onlar için büyük önem taşımaktadır. Murat Bey, sessiz ve
+  huzurlu bir ortam isterken Ayşe Hanım, sağlık açısından güneş alan ve ferah bir evin gerekli olduğunu düşünmektedir. Çocuklar ise bahçede
+  oynayabilecekleri bir ev hayal etmektedir.</p>
+  <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Ev Seçeneği 1</h4>
+    <p>Şehir merkezine 15 dakika uzaklıkta, iki katlı, geniş bahçeli bir müstakil ev. Evin 4 yatak odası, 2 banyosu ve geniş bir oturma odası vardır. 
+      Bahçe çocukların oyun oynaması için uygundur. Ayrıca ev güneş ışığını gün boyu alır ve sessiz bir mahallede bulunur. Ancak fiyatı diğer seçeneklere
+       göre biraz yüksektir.</p>
+    <button class="btn-professional" onclick="stiller()">Seç</button>
+  </div>
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Ev Seçeneği 2</h4>
+    <p>
+Merkeze 5 dakika uzaklıkta, modern bir apartman dairesi. 3 yatak odası, 1 banyo ve geniş bir balkon bulunmaktadır. Ulaşım açısından çok avantajlıdır
+ ve çocukların okuluna yürüyerek gidilebilecek mesafededir. Ancak bahçesi olmadığı için çocukların oyun alanı sınırlıdır ve çevre daha gürültülüdür.
+</p>
+
+    <button class="btn-professional" onclick="amoura()">Seç</button>
+  </div>
+  <p id="Shevcheko">Yaptığınız ev seçimi Yılmaz ailesi için...</p>
+  <br>
+  <p>Barukan ailesi, İstanbul’un kenar mahallelerinden birinde yaşayan dört kişilik bir ailedir. Baba Cem, sabah işe arabayla gidiyor ve maksimum 
+    20 dakika sürede ulaşmak istiyor. Anne Selin evden çalışıyor, sessiz ve ferah bir alan istiyor. Çocuklar Berat ve Melis, bahçede güvenle oynayabilecekleri bir alan talep ediyor. Aile, komşularla iyi geçinmek ve aynı
+     zamanda şehir merkezine ulaşımı rahat bir yerde yaşamak istiyor. Evin hem otoparkı olması hem de mutfakta bol ışık alması önemli kriterler arasında.
+    </p>
+    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Ev Seçeneği 1</h4>
+    <p>İki katlı, 180 m² büyüklüğünde bir müstakil ev. Bahçesi orta büyüklükte, çocuklar için güvenli oyun alanı var. 
+      Balkon doğuya bakıyor, mutfak güneş ışığını öğleden sonra alıyor. Kapalı otopark mevcut. Şehir merkezine arabayla 18 dakika uzaklıkta.</p>
+    <button class="btn-professional" onclick="Melis()">Seç</button>
+  </div>
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Ev Seçeneği 2</h4>
+    <p>
+Tek katlı, 200 m² büyüklüğünde villa. Bahçe geniş, çocuklar için çok sayıda oyun alanı mevcut.
+ Balkon batıya bakıyor, mutfak sabah güneşi alıyor. Kapalı otopark yok. Şehir merkezine arabayla 15 dakika uzaklıkta.
+</p>
+
+    <button class="btn-professional" onclick="Alkan()">Seç</button>
+  </div>
+  <p id="Buglem">Yaptığınız ev seçimi Barukan ailesi için...</p>
+  <br>
+  <br>
+  <p>Bu yaz boyunca aileler, farklı yaşam tarzlarına uygun ev seçeneklerini değerlendirdi. Her ailenin öncelikleri, bütçesi ve yaşam alışkanlıkları göz 
+    önünde bulunduruldu. Demir ailesi çocuklarının güvenliğini ve ulaşım kolaylığını ön planda tutarken, Altınkaya ailesi şehir merkezine yakın ve sosyal 
+    imkanları uygun bir evi tercih etti. Kılıç ailesi yoğun iş temposu nedeniyle şehir merkezine yakın bir modern rezidansı seçerken, Yılmaz ailesi sessiz ve 
+    huzurlu bir ortam sunan bahçeli müstakil evi uygun buldu. Barukan ailesi ise hem güvenlik hem ulaşım hem de alan dengesi açısından Seçenek 1'i doğru
+    seçenek olarak değerlendirdi.
+   Tüm bu seçimler, ailelerin farklı ihtiyaç ve önceliklerinin ev seçiminde nasıl belirleyici olduğunu gösterdi.</p>
+ <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Değerlendirme </h4>
+    <p>Yaz Bölümü için kendini değerlendirmek istiyorsan alttaki butona tıkla</p>
+    <a href="yazdegerlendirme.html" target="_blank">
+    <button class="btn-professional" onclick="">Değerlendirme</button>
+    </a>
+  </div>
+  <div style="flex: 1; min-width: 280px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px;">
+    <h4>Kış Bölümü<h4>
+    <p>
+Kış Bölümüne geçip yeni aileler ve yeni evler görmek istiyorsan tıkla
+</p>
+<a href="kıs.html" target="_blank">
+    <button class="btn-professional" onclick="">Kış Bölümü</button>
+</a>
+  </div>
+
+ 
+
+
+
+</section>
+
+</body>
+<script>
+  function Berna() 
+  {
+    document.getElementById("enes").innerHTML="Yaptığınız ev seçimi Demir ailesi için doğru seçim oldu ve çok mutlu ve eğlenceli zaman geçirdiler Onur puanınız 20 puan arttı.✅​"
+  }
+</script>
+<script>
+  function Berat()
+  {
+    document.getElementById("enes").innerHTML="Yaptığınız ev seçimi Demir ailesi için doğru bir seçim olmadı zamanlarını düzgün geçiremeyip mutsuz oldular Onur puanınız 10 puan azaldı.​❌​"
+  }
+</script>
+<script>
+  function buma()
+  {
+document.getElementById("ronaldo").innerHTML="Yaptığınız ev seçimi Altınkaya ailesi için doğru bir seçim oldu ve bu ev seçimi sayesinde iş tepmosu ile ev arasındaki bağı doğruca kurdular Onur puanınız 20 puan arttı.✅"
+  }
+</script>
+<script>
+  function abc()
+  {
+    document.getElementById("ronaldo").innerHTML="Yaptığınız ev seçimi Altınkaya ailesi için doğru bir seçim olmadı iş temposu ile ev arasındaki bağı kuramadıkları için evde huzursuzluk oluştu Onur puanınız 10 puan azaldı.​❌"
+  }
+</script>
+<script>
+  function def()
+  {
+    document.getElementById("messi").innerHTML="Yaptığınız ev seçimi Kılıç ailesi için doğru bir seçim oldu ve yoğun iş temposu ile çocuklarının aktiviteleri aksamamış oldu Onur puanınız 20 puan arttı.✅"
+  }
+</script>
+<script>
+  function ghj()
+  {
+    document.getElementById("messi").innerHTML="Yaptığınız ev seçimi Kılıç ailesi için doğru bir seçim olmadı ve yoğun iş temposu ile uğraşmak zorunda kaldıkları için çocukların aktiviteleri aksadı Onur puanınız 10 puan azaldı.​❌"
+  }                                                                                                                                                                                                                                             
+</script>
+<script>
+  function stiller()
+  {
+    document.getElementById("Shevcheko").innerHTML="Yaptığınız ev seçimi Yılmaz ailesi için doğru bir seçim oldu bunun sayesinde yaşam kaliteleri artmış oldu Onur puanınız 20 puan arttı.✅"
+  }
+</script>
+<script>
+  function amoura()
+  {
+    document.getElementById("Shevcheko").innerHTML="Yaptığınız ev seçimi Yılmaz ailesi için doğru bir seçim olmadı evde büyük bir huzursuzluk ortamı oluştu çiftler ayrılma aşamasına kadar geldi Onur puanınız 20 puan azaldı.​❌"
+  }
+</script>
+<script>
+  function Melis()
+  {
+    document.getElementById("Buglem").innerHTML="Yaptığınız ev seçimi Barukan ailesi için doğru bir seçim oldu güvenli ve dahada huzurlu bir hayat yaşamaya devam ettiler Onur puanınız 20 puan arttı.✅"
+  }
+</script>
+<script>
+  function Alkan()
+  {
+    document.getElementById("Buglem").innerHTML="Yaptığınız ev seçimi Barukan ailesi için doğru bir seçim olmadı Barukan ailesi işe yetişme çabası yüzünden verimli zaman geçiremedi Onur puanınız 10 puan azaldı.​❌"
+  }
+</script>
+</html>                                                                                                                                                                                                                                              

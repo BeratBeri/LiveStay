@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kış Bölümü - Ev Seçimi</title>
+  <link rel="icon" href="img/LiveStay (1).png" type="image/png" />
+  <style>
+    body {
+      margin:0;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      min-height:100vh;
+      color:#fff;
+      background: linear-gradient(135deg, #0f2027, #2c5364);
+      transition: background 3s ease-in-out;
+      padding:40px 0;
+    }
+
+    .glass-container {
+      border-radius: 15px;
+      padding: 40px 30px;
+      max-width: 900px;
+      width: 90%;
+      text-align: center;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      box-shadow:0 15px 40px rgba(0,0,0,0.35);
+      animation: glassPulse 6s infinite alternate;
+    }
+
+    @keyframes glassPulse {
+      0% { background: rgba(255,255,255,0.03); backdrop-filter: blur(10px);}
+      50% { background: rgba(255,255,255,0.07); backdrop-filter: blur(15px);}
+      100% { background: rgba(255,255,255,0.05); backdrop-filter: blur(12px);}
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #e0e0e0;
+      margin-bottom: 20px;
+    }
+
+    .cold-card {
+      background: rgba(255,255,255,0.08);
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      animation: cardPulse 6s infinite alternate;
+    }
+
+    .cold-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+    }
+
+    @keyframes cardPulse {
+      0% { background: rgba(255,255,255,0.05); }
+      50% { background: rgba(255,255,255,0.12); }
+      100% { background: rgba(255,255,255,0.08); }
+    }
+.ev-secenekleri-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Kartlar arası boşluk */
+  margin-top: 20px;
+}
+
+.ev-card {
+  flex: 1 1 300px; /* Minimum 300px, büyüyebilir */
+  max-width: 400px;
+  background: rgba(255,255,255,0.08); /* Glass efekti */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ev-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+/* Kış Butonları */
+.winter-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255,255,255,0.1); /* Glass efekti */
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.winter-button:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+.kis-buton {
+    background: linear-gradient(145deg, #a4d4ff, #73b9ff);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(115, 185, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+
+  .kis-buton:hover {
+    background: linear-gradient(145deg, #c1e4ff, #88c9ff);
+    box-shadow: 0 6px 20px rgba(115, 185, 255, 0.9);
+    transform: scale(1.05);
+  }
+
+  .kis-buton:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(115, 185, 255, 0.6);
+  }
+  </style>
+
+</head>
+<body>
+
+  <div class="glass-container">
+    <h1>Kış Bölümüne Hoş Geldiniz!</h1>
+
+    <p>
+      <strong>Hoş geldiniz!</strong>
+Bu bölümde <strong>Beri, Çalışkan, Karabulut, Çelik ve Derman</strong> ailelerinin kış tatili planlarını ve ev seçimlerini keşfedeceksiniz.
+Karla kaplı manzaralar, sıcak ve rahat ev seçenekleri ile profesyonel bir kış deneyimi sizleri bekliyor.
+Her kart, ailelerin kış tatiline uygun tercihlerini ve detaylarını gösterirken, animasyonlu glass tasarım ile göz alıcı bir görsel deneyim sunar.
+Hazır olun, soğuk renklerin ve kış atmosferinin içinde keyifli bir yolculuk başlıyor !
+    </p>
+    <br>
+    <h1>SORULAR ❄️​</h1>
+    <p>Beri Ailesi, 4 kişilik sıcak bir ailedir. Anne ve baba, şehir hayatının koşuşturmacasından uzaklaşıp kışın tadını çıkaracakları bir tatil evi arıyor. Çocukları için güvenli, sıcak ve konforlu bir
+       ortam öncelikli kriterleri. Aile, kar manzaralı ve doğayla iç içe bir yer tercih ediyor, aynı zamanda ulaşımın çok zor olmamasına da dikkat ediyor.
+    </p>
+    <div class="ev-secenekleri-flex">
+  <!-- Ev Seçeneği 1 -->
+  <div class="ev-card">
+    <p><strong>Ev Seçeneği 1:</strong>Dağ eteklerinde, geniş bir bahçeye sahip, 3 yatak odalı modern villa. Kar manzarasına hakim, iç tasarımı sıcak ve konforlu. Fiyat orta seviyede, ulaşım biraz zahmetli.</p>
+    <a  class="winter-button" onclick="Bordo()">Bu Evi Seç </a>
+  </div>
+
+  <!-- Ev Seçeneği 2 -->
+  <div class="ev-card">
+    <p><strong>Ev Seçeneği 2:</strong>Şehir kenarında, küçük bahçeli, 2+1 konforlu daire. Ulaşımı kolay, kış aktivitelerine yakın ama manzara ve iç tasarım biraz daha sade.</p>
+    <a  class="winter-button" onclick="turk()">Bu Evi Seç </a>
+  </div>
+  <p id="tsk">Yaptığınız ev seçimi Beri ailesi için...</p>
+  <br>
+  <p>Çalışkan ailesi, şehir merkezine yakın bir ilçede yaşayan dört kişilik bir aile. Anne Zeynep, ilkokul öğretmeni; baba Mehmet ise mühendis olarak 
+    bir şirkette çalışıyor. On yaşındaki Elif resim yapmayı çok seviyor, yedi yaşındaki Kerem ise sürekli top peşinde koşuyor. Aile, daha geniş bir eve 
+    taşınmak istiyor çünkü şu an oturdukları daire hem küçük hem de gürültülü bir caddede. Zeynep, işten geldiğinde sessizce kitap okuyabileceği bir köşe 
+    hayal ederken, Mehmet de hafta sonları kendi projelerini yapabileceği bir çalışma odasına sahip olmak istiyor. Elif, resimlerini asabileceği bir atölye köşesi 
+    düşlerken, Kerem bahçede arkadaşlarıyla oyun oynayabileceği güvenli bir ortam istiyor.
+     Aile, uzun süredir internetten ve emlakçılardan uygun ev arayışı içinde. Hem ulaşım kolaylığı hem de güvenli, huzurlu bir ortam onlar için öncelikli.</p>
+     <div class="ev-secenekleri-flex">
+  <!-- Ev Seçeneği 1 -->
+  <div class="ev-card">
+    <p><strong>Ev Seçeneği 1:</strong>Merkezde, metroya yürüyüş mesafesinde yer alan, sessiz bir site içindeki üç odalı daire. Ev iyi yalıtımlı ve kışın çok
+       az enerji harcıyor. Salonda geniş pencereler var ve güneş ışığını gün boyu alıyor. Site içinde kapalı spor salonu, çocuk oyun alanı ve bakımlı bir iç
+        avlu mevcut. Sabah koşuları için uygun bir park hemen karşısında yer alıyor. Güvenlik 7/24 görev yapıyor, kapalı otopark var ve aidatlar makul
+         seviyede. Çalışma odası olarak kullanılabilecek ayrı bir oda, Zeynep ve
+       Mehmet için büyük avantaj sağlıyor. Çocukların okuluna yürüyerek ulaşılabiliyor, ayrıca market ve eczane gibi temel ihtiyaç noktaları da çok yakın.</p>
+    <a  class="winter-button" onclick="cerkez()">Bu Evi Seç </a>
+  </div>
+
+  <!-- Ev Seçeneği 2 -->
+  <div class="ev-card">
+    <p><strong>Ev Seçeneği 2:</strong>Şehrin çeperinde, ring otobüs hattına yakın, iki katlı geniş bir dubleks. Salon oldukça ferah ve yüksek tavanlı, 
+      ayrıca alt katta yemek bölümüyle birleşiyor. Üst katta aile için özel çalışma ve dinlenme köşeleri var. Site içinde spor sahası, bisiklet yolları ve 
+      hafta sonu etkinlik alanları bulunuyor. Kış bakım hizmeti düzenli yapılıyor, ayrıca araç paylaşım noktası yürüme mesafesinde. Trafik yoğunluğu pik
+       saatlerde orta seviyede, genel olarak sakin bir çevre hâkim. Okul ve markete yürüyerek ulaşmak mümkün. Bahçesi hem Kerem’in oyun oynaması hem de
+Elif’in resim yaparken ilham alması için keyifli bir ortam sunuyor. Mehmet için garaj bölümü, küçük atölye olarak kullanılabilecek şekilde düzenlenmiş.</p>
+    <a  class="winter-button" onclick="rus()">Bu Evi Seç </a>
+  </div>
+  <p id="onay">Yaptığınız ev seçimi Çalışkan ailesi için...</p>
+  <br>
+  <p>Karabulut ailesi, şehir merkezine yakın ama gürültüden uzak bir yerde yaşamak istiyor. Ailede baba Ahmet, anne Zeynep ve 5 yaşındaki kızları Elif var.
+     Ahmet, her gün ofise toplu taşıma ile gitmek zorunda, bu yüzden otobüs veya metro durağına yakın bir ev arıyor. Zeynep ise evde çalışıyor, bu yüzden 
+     gün ışığı alan ve sessiz bir çalışma odasının olması
+     onun için çok önemli. Küçük Elif ise geniş bir oyun alanı istiyor. Ayrıca aile bütçesi sınırlı olduğu için, kira bedelinin uygun olması da şart.</p>
+
+</div>
+<div class="ev-secenekleri-flex">
+  <!-- Ev Seçeneği 1 -->
+  <div class="ev-card">
+    <p><strong>Ev Seçeneği 1:</strong>Şehir merkezine 15 dakika mesafede, 2+1 daire.
+       Metro durağına 3 dakika yürüme mesafesinde. Geniş salonu ve güneş alan bir balkonu var. Ancak dairenin olduğu sokak akşamları biraz gürültülü oluyor.</p>
+    <a  class="winter-button" onclick="beri()">Bu Evi Seç </a>
+  </div>
+
+  <!-- Ev Seçeneği 2 -->
+  <div class="ev-card">
+    <p><strong>Ev Seçeneği 2:</strong>Şehir merkezine 25 dakika mesafede, 3+1 daire. Sessiz bir mahallede, önünde küçük bir park var. 
+      Ev çok güneş alıyor, ayrıca bir odası çalışma odası olarak düzenlenmiş. Metro durağına yürüyerek 7 dakika. Kira bedeli Ev 1’e göre biraz daha düşük.</p>
+    <a class="winter-button" onclick="albayrak()">Bu Evi Seç </a>
+  </div>
+  <p id="cr7">Yaptığınız ev seçimi Karabulut ailesi için...</p>
+  <br>
+  <p>Çelik ailesi, şehirden biraz uzak ama doğayla iç içe bir yaşam arayan dört kişilik bir aile. Baba Murat, evden çalışıyor ve sessiz bir ofis alanı istiyor. Anne Selin, evde el işi ve resimle uğraşıyor; aydınlık bir odası olması onun için çok önemli. On yaşındaki Ahmet ve sekiz yaşındaki
+     Ece ise kar ve bahçe oyunlarını rahatça oynayabilecekleri geniş bir alan istiyor. Aile, güvenli, sıcak ve ulaşımı kolay bir ev arayışında.</p>
+     <div class="ev-secenekleri-flex">
+  <!-- Ev Seçeneği 1 -->
+  <div class="ev-card">
+    <p><strong>Ev Seçeneği 1:</strong>Şehrin biraz dışında, sessiz bir mahallede, 
+      3+1 daire. Geniş bir bahçesi var ve kış manzarası güzel. Çocuklar için oyun alanı mevcut. Ulaşım biraz uzak, kira orta seviyede.</p>
+    <a  class="winter-button" onclick="kaka()">Bu Evi Seç </a>
+  </div>
+
+  <!-- Ev Seçeneği 2 -->
+  <div class="ev-card">
+    <p><strong>Ev Seçeneği 2:</strong>Şehir merkezine yakın, 2+1 daire. Isı yalıtımı iyi, ulaşım kolay, manzara ve bahçe küçük. 
+      Ev içi alan biraz sınırlı ama merkezi konumu avantaj.</p>
+    <a  class="winter-button" onclick="saka()">Bu Evi Seç </a>
+  </div>
+<p id="zidane">Yaptığınız ev seçimi Çelik ailesi için...</p>
+<br>
+<p>Derman ailesi, kış aylarını huzurlu ve konforlu geçirmek isteyen üç kişilik bir aile. Baba Can, şehirde ofiste çalışıyor, anne Zeynep ise evden 
+  işlerini yürütüyor. Küçük çocukları Ayşe, geniş ve güvenli bir bahçede
+   oyun oynamak istiyor. Aile, sessiz ve sağlıklı bir çevre arayışı içinde. Ev seçiminde konfor, ısı yalıtımı ve ulaşım kolaylığı öncelikli kriterleri.</p>
+   <div class="ev-secenekleri-flex">
+  <!-- Ev Seçeneği 1 -->
+  <div class="ev-card">
+    <p><strong>Ev Seçeneği 1:</strong>Şehir kenarında, modern 2+1 daire. Bahçesi küçük ama bakımlı, ulaşım kolay. İç mekan aydınlık ve konforlu.</p>
+    <a  class="winter-button" onclick="min()">Bu Evi Seç </a>
+  </div>
+
+  <!-- Ev Seçeneği 2 -->
+  <div class="ev-card">
+    <p><strong>Ev Seçeneği 2:</strong>Şehrin dışında, 3+1 villa. Geniş bahçe, çocuk oyun alanı ve kar manzarası mevcut. Ulaşım biraz zahmetli ama aile için 
+      daha uygun.</p>
+    <a  class="winter-button" onclick="heung()">Bu Evi Seç </a>
+  </div>
+<p id="son">Yaptığınız ev seçimi Derman ailesi için...</p>
+<br>
+<br>
+<p>Tebrikler,Kış tatili boyunca ailelerimiz zorlu seçimlerle karşılaştı. Soğuk havaya rağmen kararlarını ustalıkla verdiler ve sonuçlar ortaya çıktı:
+
+Doğru evleri seçenler, huzur ve konforu yakaladı.
+
+Bazı seçenekler sıcaklık ve manzara açısından ideal, bazıları ise ulaşım ve günlük yaşam kolaylığı sağladı.
+
+Sonuç olarak, tüm aileler ihtiyaçlarına en uygun evi buldu ve kış mevsimini mutlu geçirdi.
+
+Tüm seçimleri değerlendirince, kış bölümü onur puanı: 100/100! 🎉
+Karlar altında bile başarı, dikkat ve strateji ile mümkün oldu.</p>
+<a href="kısdegerlendirme.html" target="_blank">
+<button class="kis-buton">Değerlendirme</button></a>
+<a href="yaz.html">
+<button class="kis-buton">Yaz Bölümü</button></a>
+</div>
+
+</body>
+ <script>
+    const coldColors = ['#0f2027','#203a43','#2c5364','#1c3c60','#254e70','#3b5a78'];
+    let current = 0;
+
+    function changeBackground() {
+      const next = (current + 1) % coldColors.length;
+      document.body.style.background = `linear-gradient(135deg, ${coldColors[current]}, ${coldColors[next]})`;
+      current = next;
+    }
+
+    setInterval(changeBackground, 4000);
+    changeBackground();
+  </script>
+  <script>
+    function turk()
+    {
+      document.getElementById("tsk").innerHTML="Yaptığınız ev seçimi Beri ailesi için doğru bir seçim oldu ve kış tatillerini güzel geçirdiler Onur puanınız 20 puan arttı.✅​"
+    }
+  </script>
+  <script>
+    function Bordo()
+    {
+      document.getElementById("tsk").innerHTML="Yaptığınız ev seçimi Beri ailesi için doğru bir seçim olmadı ve kış tatilleri pekde iyi geçmedi onur puanınız 10 puan azaldı.❌​"
+    }
+  </script> 
+  <script>
+    function rus()
+    {
+      document.getElementById("onay").innerHTML="Yaptığınız ev seçimi Çalışkan ailesi için doğru bir seçim oldu hem çocuklar düzenli vakit geçirdi hem de tatilin keyfini çıkardılar Onur puanınız 20 puan arttı.✅"
+    }
+  </script>
+  <script>
+    function cerkez()
+    {
+      document.getElementById("onay").innerHTML="Yaptığınız ev seçimi Çalışkan ailesi için doğru bir seçim olmadı tatilleri zehir gibi geçti Onur puanınız 10 puan azaldı.❌"
+    }
+  </script>  
+  <script>
+    function beri()
+    {
+      document.getElementById("cr7").innerHTML="Yaptığınız ev seçimi Karabulut ailesi için doğru bir seçim oldu güzel bir tatil geçirdiler Onur puanınız 20 puan arttı. ✅"
+    }                                                                                                                                                                                         
+  </script>     
+  <script>
+    function albayrak()
+    {
+      document.getElementById("cr7").innerHTML="Yaptığınız ev seçimi Karabulut ailesi için doğru bir seçim olmadı tatilleri güzel geçmedi Onur puanınız 10 puan azaldı.❌         "
+    }
+  </script>     
+  <script>
+    function kaka()
+    {
+      document.getElementById("zidane").innerHTML="Yaptığınız ev seçimi Çelik ailesi için doğru bir seçim oldu ve tatillerini güzel ve huzurlu bir şekilde geçirdiler Onur puanınız 20 puan arttı.✅     "
+    }
+  </script> 
+  <script>
+    function saka()
+    {
+      document.getElementById("zidane").innerHTML="Yaptığınız ev seçimi Çelik ailesi için doğru bir seçim olmadı tatilleri düzensiz geçti Onur puanınız 10 puan azaldı. ❌        "
+    }
+  </script>
+  <script>
+    function heung()       
+    {
+      document.getElementById("son").innerHTML="Yaptığınız ev seçimi Derman ailesi için doğru bir seçim oldu tatilleri güzel geçti çiftlerinde ilişkisinde olan bağları birbirine karşı arttı Onur puanınız 20 puan arttı.✅"
+    }
+  </script>
+  <script>
+    function min()
+    {
+      document.getElementById("son").innerHTML="Yaptığınız ev seçimi Derman ailesi için doğru bir seçim olmadı tatilleri iyi geçti denmez ama yinede birazda olsa eğlenceliydi Onur puanınız 10 puan arttı.✅                      "
+    }
+  </script>                                                                                                                                                                
+</html>
+
+                                                                                                                                                                                                                   

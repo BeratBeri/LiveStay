@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Yaz Bölümü Değerlendirme Tablosu</title>
+  <link rel="icon" href="img/LiveStay (1).png" type="image/png" />
+  <style>
+    /* Ana sayfa profesyonel arka plan */
+    body {
+      margin:0;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background:linear-gradient(135deg, #1e3c72, #2a5298); /* Ana sayfa gradienti */
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      color:#fff;
+    }
+
+    table {
+      border-collapse: collapse;
+      width:90%;
+      max-width:900px;
+      text-align:center;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 15px 40px rgba(0,0,0,0.35);
+      background:rgba(255,255,255,0.05); /* Yarı transparan şeffaf tablo */
+      backdrop-filter:blur(10px);
+    }
+
+    th, td {
+      padding:18px 20px;
+      border-bottom:1px solid rgba(255,255,255,0.2);
+      font-size:17px;
+    }
+
+    th {
+      background:rgba(255,255,255,0.15);
+      font-size:19px;
+      font-weight:700;
+      color:#fff;
+    }
+
+    tr:nth-child(even) {
+      background:rgba(255,255,255,0.05);
+    }
+
+    tr:hover {
+      background:rgba(255,255,255,0.2);
+      transform:scale(1.02);
+      transition:all 0.3s ease;
+    }
+
+    /* Başlık */
+    h1 {
+      text-align:center;
+      margin-bottom:30px;
+      font-size:32px;
+      text-shadow:0 3px 10px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div style="width:100%; max-width:1000px; padding:20px;">
+
+    <h1>Yaz Bölümü Değerlendirme</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Onur Puanı</th>
+          <th>Değerlendirme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>0</td><td>0 Onur: Vay be, tam anlamıyla “aileyi çıldırttın”! 😅</td></tr>
+        <tr><td>10</td><td>10 Onur: Biraz yanıldın, ama pizza ile telafi edebilirsin 🍕</td></tr>
+        <tr><td>20</td><td>20 Onur: Ufak bir ders var, belki kahve ile sakinleşirler ☕</td></tr>
+        <tr><td>30</td><td>30 Onur: Hmmm… Orta karar, aile biraz kaşlarını çattı 😏</td></tr>
+        <tr><td>40</td><td>40 Onur: Fena değil, ama bir tık daha dikkat gerek 🧐</td></tr>
+        <tr><td>50</td><td>50 Onur: Ortalama seçim, aile karışık duygular içinde 🤔</td></tr>
+        <tr><td>60</td><td>60 Onur: İyi iş çıkardın, aile hafifçe gülümsüyor 🙂</td></tr>
+        <tr><td>70</td><td>70 Onur: Çok iyi! Aile mutlu ve biraz gururlu 😎</td></tr>
+        <tr><td>80</td><td>80 Onur: Harika bir seçim, aile bayram etti gibi 🎉</td></tr>
+        <tr><td>90</td><td>90 Onur: Mükemmel seçim, “bravo” sesleri duyuluyor 👏</td></tr>
+        <tr><td>100</td><td>100 Onur: Efsanevi seçim! Aile mutluluktan dans ediyor 💃🕺</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</body>
+</html>
+

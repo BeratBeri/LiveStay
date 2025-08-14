@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LiveStay - Hakkında</title>
+<link rel="icon" href="img/LiveStay (1).png" type="image/png" />
+<style>
+  /* Temel reset ve font */
+  body {
+    margin:0; padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #f12711, #f5af19);
+    background-size: 400% 400%;
+    animation: bgAnim 20s ease infinite;
+    color: white;
+    display: flex; flex-direction: column; min-height: 100vh;
+  }
+  @keyframes bgAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  header {
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    padding: 20px 40px;
+    display: flex; justify-content: space-between; align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  }
+  header .logo {
+    font-size: 28px; font-weight: 700; letter-spacing: 2px;
+  }
+  nav a {
+    color: white; text-decoration: none;
+    margin-left: 30px; font-weight: 600; font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  nav a:hover, nav a.active {
+    color: #ffd700;
+  }
+  main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; align-items: center;
+    padding: 60px 20px;
+  }
+  .glass-box {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 40px 50px;
+    max-width: 900px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    line-height: 1.6;
+  }
+  .glass-box h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .glass-box p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 25px;
+  }
+  .feature-item {
+    background: rgba(255,255,255,0.15);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: inset 0 0 15px rgba(255,255,255,0.1);
+    transition: background 0.3s ease;
+  }
+  .feature-item:hover {
+    background: rgba(255,255,255,0.25);
+  }
+  .feature-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  footer {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(6px);
+    color: #ccc;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">LiveStay</div>
+  <nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hakkinda.html" class="active">Hakkında</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+</header>
+
+<main>
+  <div class="glass-box">
+    <h1>LiveStay Hakkında</h1>
+    <p>LiveStay, oyunculara eşsiz bir çevrimiçi macera deneyimi sunmak için tasarlanmış yenilikçi bir platformdur. Geniş açık dünyası, dinamik etkinlikleri ve sosyalleşmeye verdiği önemle farklı türde oyunculara hitap eder.</p>
+    <p>Oyuncular, karakterlerini ve ekipmanlarını diledikleri gibi özelleştirip, takım kurabilir ve düzenlenen turnuvalarda becerilerini gösterebilirler. Sürekli güncellenen içeriklerle oyun deneyimi taze kalır.</p>
+    
+    <div class="features">
+      <div class="feature-item">
+        <h3>🌍 Keşfedilebilir Açık Dünya</h3>
+        <p>Devasa haritalarda keşif yapın, gizli alanları bulun ve stratejik avantaj elde edin.</p>
+      </div>
+      <div class="feature-item">
+        <h3>⚔️ Rekabetçi Çok Oyunculu Modlar</h3>
+        <p>Arkadaşlarınızla takım kurup PvP ve PvE modlarında mücadele edin.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🎯 Sezonluk Etkinlikler</h3>
+        <p>Ödüller kazanabileceğiniz düzenli turnuvalar ve özel görevler.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🎨 Kişiselleştirme</h3>
+        <p>Karakterinizin ve ekipmanınızın görünümünü kendi stilinize göre ayarlayın.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2025 LiveStay. Tüm Hakları Saklıdır.
+</footer>
+
+</body>
+</html>
+
+
+
